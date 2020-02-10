@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PlutonemLoginFlow</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="enter_phone_plutonem">Log in to Plutonem using a phone number to enjoy shopping process.</string>
+    <string name="next">Next</string>
+    <string name="alternatively">Alternatively:</string>
+    <string name="sign_up_instead">Sign up</string>
+    <string name="phone_not_registered_plutonem">Hmm, we can\'t find a Plutonem account connected to this phone number. Please sign up with this number first.</string>
+    <string name="registration_fail">It looks like this registration is fail. Please try again later.</string>
+    <string name="enter_pn_password">Enter your Plutonem password.</string>
+    <string name="enter_pn_password_google">To proceed with this Google account, please provide the matching Plutonem password. This will be asked only once.</string>
+    <string name="enter_phone">Enter the Phone of the Plutonem you\'d like to connect.</string>
+    <string name="login_error_button">Close</string>
+    <string name="signup_phone_error_generic">There was some trouble checking the phone number.</string>
+    <string name="signup_phone_header">To create your new Plutonem account, please enter your phone number.</string>
+
+    <string name="duplicate_buyer_detected">A duplicate buyer has been detected.</string>
+    <string name="error_fetch_my_profile">Couldn\'t retrieve your profile</string>
+    <string name="checking_phone">Checking phone</string>
+    <string name="phone_invalid">Enter a valid phone number</string>
+    <string name="Signing_up">Signing up</string>
+    <string name="logging_in">Logging in</string>
+    <string name="error_generic">An error occurred</string>
+    <string name="error_generic_network">A network error occurred. Please check your connection and try again.</string>
+
+    <!-- Screen titles -->
+    <string name="phone_number_login_title">Phone number login</string>
+    <string name="pn_signup_title">Signup credentials</string>
+
+    <string name="signup_phone_screen_title">Phone signup</string>
+</resources>

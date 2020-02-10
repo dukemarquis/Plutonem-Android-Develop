@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.google.android.material.card.MaterialCardView-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--app:cardCornerRadius="3dp"-->
+<!--app:cardElevation="2dp">-->
+
+<!--<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+<!--    style="@style/Widget.MaterialComponents.CardView"-->
+
+<!--    android:id="@+id/materialCardView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginStart="@dimen/card_spacing"-->
+<!--    android:layout_marginLeft="@dimen/card_spacing"-->
+<!--    android:layout_marginTop="@dimen/card_spacing"-->
+
+<!--    app:cardCornerRadius="@dimen/card_corner_radius"-->
+<!--    app:cardElevation="0dp">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="8dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="230dp"-->
+<!--            android:background="#e1bfe8"-->
+<!--            android:onClick="seeCommodityDetailPage"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="230dp"-->
+<!--android:adjustViewBounds="true"-->
+<!--android:contentDescription="@string/content_description"-->
+<!--android:scaleType="centerCrop"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:srcCompat="@drawable/dashboard_1" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/card_title"-->
+<!--style="@style/TextAppearance.MaterialComponents.Headline6"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="16dp"-->
+<!--android:layout_marginLeft="16dp"-->
+<!--android:layout_marginTop="16dp"-->
+<!--android:text="Title goes here"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/card_subtitle"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Caption"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_marginTop="15dp"-->
+
+<!--            android:paddingBottom="30dp"-->
+
+<!--            app:layout_constraintStart_toStartOf="@+id/imageView"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView"-->
+
+<!--            android:background="#e1bfe8"/>-->
+
+
+<!--<com.google.android.material.button.MaterialButton-->
+<!--android:id="@+id/action_button_1"-->
+<!--style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="16dp"-->
+<!--android:text="ACTION 1"-->
+<!--android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"-->
+<!--android:textSize="15sp"-->
+<!--app:layout_constraintStart_toStartOf="@+id/card_subtitle"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/card_subtitle" />-->
+
+<!--<com.google.android.material.button.MaterialButton-->
+<!--android:id="@+id/action_button_2"-->
+<!--style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="32dp"-->
+<!--android:layout_marginLeft="32dp"-->
+<!--android:text="ACTION 2"-->
+<!--android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"-->
+<!--android:textSize="15sp"-->
+<!--app:layout_constraintBottom_toTopOf="@+id/action_button_1"-->
+<!--app:layout_constraintStart_toEndOf="@+id/action_button_1"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/action_button_1" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</com.google.android.material.card.MaterialCardView>-->
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/plutonem_hpage_card_materialcardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_spacing"
+    android:layout_marginLeft="@dimen/card_spacing"
+    android:layout_marginTop="@dimen/card_spacing">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <FrameLayout
+            android:id="@+id/media_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent" >-->
+
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+
+                app:srcCompat="@drawable/white_background"
+                app:tint="?colorSurface"
+                app:tintMode="multiply" />
+
+            <ImageView
+                android:id="@+id/volume_control"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0"
+                android:animateLayoutChanges="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_volume_up_grey_24dp" />
+
+            <ProgressBar
+
+                style="?android:attr/progressBarStyle"
+
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/plutonem_hpage_card_textview_cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?textAppearanceBody2"
+
+            app:layout_constraintStart_toStartOf="@+id/media_container"
+            app:layout_constraintTop_toBottomOf="@+id/media_container" />
+
+        <TextView
+            android:id="@+id/plutonem_hpage_card_textview_cprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?textAppearanceBody2"
+
+            app:layout_constraintStart_toStartOf="@+id/media_container"
+            app:layout_constraintTop_toBottomOf="@+id/plutonem_hpage_card_textview_cname" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/title"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:text="This is the title"-->
+        <!--            android:textColor="#000"-->
+        <!--            android:textSize="20sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@id/media_container"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

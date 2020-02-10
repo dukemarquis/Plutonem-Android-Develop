@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">Plutonem</string>
+
+<!--    menu_plutonem_hpage-->
+
+    <string name="underwear">内衣</string>
+    <string name="cosmetic">化妆品</string>
+    <string name="everything">全部</string>
+
+    <string name="home_page">首页</string>
+    <string name="message">消息</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="mine">我的</string>
+
+<!--    menu_plutonem_cdetail-->
+
+    <string name="store">店铺</string>
+    <string name="customer_service">客服</string>
+    <string name="add_to_shopping_cart">加入购物车</string>
+    <string name="purchase_now">立即购买</string>
+    <string name="purchase_now_short">购买</string>
+    <string name="action_settings">设置</string>
+    <string name="contact_us">联系我们</string>
+
+<!--    layout_plutonem_fragment_cdetail_attribute-->
+
+    <string name="size">尺寸</string>
+    <string name="size_s">S</string>
+    <string name="size_m">M</string>
+    <string name="size_l">L</string>
+    <string name="size_42">15D</string>
+    <string name="size_43">30D</string>
+    <string name="size_44">40D</string>
+
+    <string name="count">购买数量</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
+    <string name="count_hint">1</string>
+    <string name="count_initial">1</string>
+
+    <string name="confirm">确定</string>
+
+<!--    layout_plutonem_fragment_confirm_order-->
+
+    <string name="make_delivery_address">请先设置收货地址</string>
+    <string name="ask_to_set_delivery_address">您还没有设置收货地址，请点击这里设置！</string>
+    <string name="cancel_make_delivery_address">取消</string>
+    <string name="confirm_make_delivery_address">确定</string>
+
+    <string name="address_name">曹汉</string>
+    <string name="address_phone_number">13581509626</string>
+    <string name="address_location">北京北京市朝阳区来广营镇花园闸路红星美凯龙朝阳路商城霍King共享聚落</string>
+    <string name="address_add">></string>
+
+    <string name="count_confirm_order">购买数量</string>
+    <string name="distribution">配送方式</string>
+    <string name="distribution_type">快递 免邮</string>
+    <string name="total_count">共1件</string>
+    <string name="total_count_comma">共一件，</string>
+    <string name="subtotal">小计：</string>
+    <string name="sum">438.00</string>
+    <string name="submit_order">提交订单</string>
+
+<!--    fragment_add_delivery_information-->
+
+    <string name="save_deliver_information">保存</string>
+    <string name="add_deliver_information">添加收货地址</string>
+    <string name="consignee">收货人</string>
+    <string name="cell_phone_number">手机号码</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="add_deliver_information_title">添加收货地址</string>
+    <string name="consignee_alert">收货人姓名长度需要在2–25个字符之间，不能包含非法字符</string>
+    <string name="cell_phone_number_alert">请填写正确的手机号码</string>
+    <string name="detailed_address_alert">详细地址长度需要在5–120个字符之间，不能包含非法字符</string>
+    <string name="check">好的</string>
+
+    <!-- account setup -->
+    <string name="no_network_title">No network available</string>
+    <string name="no_network_message">There is no network available</string>
+
+    <!-- form labels -->
+    <string name="shop_name">Shop Name</string>
+    <string name="good_name">Good Name</string>
+    <string name="item_sales_price">Item Sales Price</string>
+    <string name="item_distribution_mode">Item Distribution Mode</string>
+
+    <!-- Screen titles -->
+    <string name="home_page_section_screen_title">首页</string>
+    <string name="me_section_screen_title">我的</string>
+
+    <!--TabBar Accessibility Labels-->
+    <string name="tabbar_accessibility_label_home_page">首页：祝购物愉快</string>
+    <string name="tabbar_accessibility_label_me">我的：查询你的订单记录及个人信息</string>
+
+    <!-- default strings -->
+    <string name="plutonem" translatable="false">Plutonem</string>
+
+    <!-- general strings -->
+    <string name="await_receive">待收货</string>
+    <string name="cancel">Cancel</string>
+    <string name="keep_checking">Keep checking</string>
+    <string name="buyer_not_found">An error occurred when accessing this buyer</string>
+    <string name="order_not_found">An error occurred when loading the order. Refresh your orders and try again.</string>
+    <string name="swipe_for_more">Swipe for more</string>
+    <string name="retry">Retry</string>
+    <string name="dismiss">dismiss</string>
+    <string name="confirm_orders">Confirm Orders</string>
+
+    <!-- orders tab -->
+    <string name="orders_cannot_be_started">We cannot open the orders right now. Please try again later</string>
+    <string name="untitled_in_parentheses">(Untitled)</string>
+    <string name="undetailed_in_parentheses">(Undetailed)</string>
+    <string name="orders_empty_list">No orders yet. Why not buy one?</string>
+    <string name="empty_list_default">This list is empty</string>
+    <string name="orders_receiving_empty">You haven\'t got any orders yet</string>
+    <string name="orders_delivering_empty">You haven\'t got any orders yet</string>
+    <string name="orders_finished_empty">You haven\'t got any orders yet</string>
+
+    <!-- buttons on order cards -->
+    <string name="button_receive">Receive</string>
+    <string name="button_confirm">Buy Now</string>
+
+    <!-- order view -->
+    <string name="order_confirmed">Order confirmed</string>
+    <string name="order_submitted">Order submitted</string>
+    <string name="order_updated">Order updated</string>
+    <string name="orders_fetching">Fetching orders…</string>
+    <string name="dialog_confirm_buy_now_title">Ready to Buy Now?</string>
+    <string name="dialog_confirm_buy_now_message_order">This order will be bought now immediately.</string>
+    <string name="dialog_confirm_buy_now_yes">Buy now</string>
+
+    <!-- action from buy intents -->
+    <string name="cant_buy_no_visible_buyer">You can\'t buy in Plutonem without a visible buyer</string>
+
+    <!-- notifications -->
+    <string name="content_description_person_reading_device_notification">Person reading device with notifications</string>
+
+    <!-- editor -->
+    <string name="editor_draft_saved_locally">Draft saved on device</string>
+
+    <!-- Order Settings -->
+    <string name="order_settings_number">Number</string>
+    <string name="order_settings_detail">Detail</string>
+    <string name="order_settings_delivery_information">Delivery Information</string>
+    <string name="order_settings_not_set">Not Set</string>
+    <string name="order_settings_name">Name</string>
+    <string name="order_settings_phone_number">Phone Number</string>
+    <string name="order_settings_address">Address</string>
+    <string name="order_settings_name_dialog_hint">The name is the compellation of the consignee.</string>
+    <string name="order_settings_phone_number_dialog_hint">The phone number is the contact way of the consignee.</string>
+    <string name="order_settings_address_dialog_hint">The address is the delivery address of this order.</string>
+
+    <!-- order price selection -->
+    <string name="total_price">Total</string>
+    <string name="hundred">$ 000</string>
+    <string name="total_on">Total cost: %s</string>
+
+    <!-- Order Status -->
+    <string name="order_status_confirm_order">Buy Now</string>
+
+    <!-- Order Number -->
+    <string name="order_number_one">1</string>
+    <string name="order_number_two">2</string>
+    <string name="order_number_three">3</string>
+    <string name="order_number_four">4</string>
+    <string name="order_number_five">5</string>
+    <string-array name="order_settings_numbers" translatable="false">
+        <item>@string/order_number_one</item>
+        <item>@string/order_number_two</item>
+        <item>@string/order_number_three</item>
+        <item>@string/order_number_four</item>
+        <item>@string/order_number_five</item>
+    </string-array>
+
+    <!-- Error Messages -->
+    <!-- The following messages can\'t be factorized due to i18n -->
+    <string name="error_refresh_orders">Orders couldn\'t be refreshed at this time</string>
+
+    <string name="error_confirm_incomplete_order">Can\'t confirm an incomplete order</string>
+    <string name="error_pay_order">I\'m Sorry, there are some issues during your paying process.</string>
+    <string name="error_buyer_hidden">This buyer is hidden and couldn\'t be loaded. Enable it and try again.</string>
+
+    <!-- accessibility announcement when list loads -->
+    <string name="nemur_acessibility_list_loaded">"The list has loaded with %1$d items."</string>
+
+    <!-- activity titles -->
+    <string name="nemur_title_deeplink">Plutonem Nemur</string>
+    <string name="nemur_title_order_detail">Nemur Order</string>
+
+    <!-- button text -->
+    <string name="nemur_description_price">The price of this order</string>
+    <string name="nemur_btn_price_icon_US">$</string>
+    <string name="nemur_btn_price_icon_CNm">￥</string>
+    <string name="nemur_btn_price">140</string>
+    <string name="nemur_btn_buy">Buy Now</string>
+
+    <!-- TextView labels -->
+    <string name="nemur_label_new_orders">New orders</string>
+    <string name="nemur_label_new_orders_subtitle">Tap to show them</string>
+    <string name="namur_label_acuser_count">%,d active users</string>
+    <string name="nemur_label_gap_marker">Load more orders</string>
+    <string name="nemur_buy_orders">Buy orders</string>
+
+    <!-- toast messages -->
+    <string name="nemur_toast_err_get_buyer_info">Unable to show this buyer</string>
+
+    <!-- failure messages when retrieving a single nemur order -->
+    <string name="nemur_err_get_order_generic">Unable to retrieve this order</string>
+    <string name="nemur_err_get_order_not_authorized">You\'re not authorized to view this order</string>
+    <string name="nemur_err_get_order_not_found">This order no longer exists</string>
+
+    <!-- empty list/grid text -->
+    <string name="nemur_empty_orders_no_connection" translatable="false">@string/no_network_title</string>
+    <string name="nemur_empty_orders_request_failed">Unable to retrieve orders</string>
+    <string name="nemur_empty_orders_in_tag">No orders with this tag</string>
+    <string name="nemur_empty_orders_in_tag_updating">Fetching orders…</string>
+    <string name="nemur_empty_default_buyer_title">No orders yet</string>
+    <string name="nemur_empty_default_buyer_description">There is currently no order to buy. Please wait!</string>
+    <string name="nemur_empty_default_buyer_button_wait">Waiting new orders</string>
+
+    <!--My Buyer-->
+    <string name="my_buyer_btn_my_order">My Order</string>
+    <string name="my_buyer_btn_buyer_orders">Buyer Orders</string>
+    <string name="my_buyer_icon_content_description">Change buyer icon</string>
+
+    <!-- Special characters -->
+    <string name="previous_button" translatable="false">&lt;</string>
+    <string name="next_button" translatable="false">&gt;</string>
+
+    <!-- Orders -->
+    <string name="order_list_account_me">Me</string>
+    <string name="order_list_delivering">Delivering</string>
+    <string name="order_list_receiving">Receiving</string>
+    <string name="order_list_finished">Finished</string>
+
+    <!-- await delivery view -->
+    <string name="await_delivery">待发货</string>
+
+    <!-- notifications -->
+
+    <!-- News Card -->
+    <!-- When announcing a new feature, add new strings and make sure to update LocalNewsItem.kt -->
+    <!-- Never reuse same keys for new announcements! The new value might not be translated before the release
+    which would result in showing an out-of-date announcement. Moreover since the url has translatable set to false,
+    the out-of-date announcement might redirect the user to the new feature. -->
+    <!--suppress UnusedResources -->
+    <string name="news_card_announcement_title_sample_announcement">[New feature available]</string>
+    <!--suppress UnusedResources -->
+    <string name="news_card_announcement_content_sample_announcement">[No time to shop right now? No problem: back to action when you do.]</string>
+    <!--suppress UnusedResources -->
+    <string name="news_card_announcement_action_sample_announcement">[Shop more]</string>
+    <!--suppress UnusedResources -->
+    <string name="news_card_announcement_action_url_sample_announcement" translatable="false">https://www.plutonem.com/</string>
+    <!-- END (News Card) -->
+
+    <string name="quantity">数量</string>
+
+    <string name="app_label">findex2</string>
+    <string name="hint_text">silk dress with blueberry type</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales dui orci, ut egestas nibh porta sit amet. In vestibulum vestibulum ipsum a lacinia. Nunc bibendum lectus magna, ac vestibulum tellus tristique id. Ut lobortis ipsum quis nisl ornare, eu blandit ante molestie. Aenean malesuada orci enim, vitae viverra ex volutpat id. Praesent vitae libero non lorem vestibulum elementum id et tortor. Sed finibus erat non est feugiat fermentum. Vivamus nec pretium nisl, et elementum nisi. Pellentesque pretium sagittis arcu, sed ornare est semper ut. Nulla eu quam mauris. Fusce risus sem, egestas a odio ut, volutpat blandit est. Pellentesque gravida lectus nisi, eget consectetur dolor feugiat sit amet. Donec consectetur dictum sapien, molestie tincidunt neque iaculis in. Mauris et nisl dui. Proin malesuada dapibus purus, feugiat interdum neque volutpat sed. Suspendisse ut interdum elit, a ultricies nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
+    <string name="tab_homePage">whole</string>
+    <string name="tab_clothesAndShoes">C &amp; S</string>
+    <string name="tab_makeupAndDecor">M &amp; D</string>
+
+    <string name="card_demo">card_demo</string>
+
+    <string name="content_description">content_description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
