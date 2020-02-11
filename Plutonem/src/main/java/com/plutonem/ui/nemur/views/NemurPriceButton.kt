@@ -38,6 +38,12 @@ class NemurPriceButton : LinearLayout {
     fun updateState(priceValue: String) {
         label_price_button.text = priceValue.toUpperCase(Locale.getDefault()).substring(1)
 
+        if (priceValue.indexOf("$") == -1) {
+            icon_price_button.text = "￥"
+        } else {
+            icon_price_button.text = "$"
+        }
+
         label_price_button.isSelected = true
         icon_price_button.isSelected = true
 

@@ -18,6 +18,7 @@ public class NemurOrder {
 
     private String mTitle;
     private String mPrice;
+    private String mItemDistributionMode;
     private String mAccountName;
     private String mBuyerName;
 
@@ -46,6 +47,7 @@ public class NemurOrder {
 
         order.mPrice = JSONUtils.getStringDecoded(json, "price");
         order.mTitle = JSONUtils.getStringDecoded(json, "title");
+        order.mItemDistributionMode = JSONUtils.getStringDecoded(json, "item_distribution_mode");
 
         // parse the account section
         assignAccountFromJson(order, json.optJSONObject("account"));
@@ -122,6 +124,14 @@ public class NemurOrder {
         this.mPrice = StringUtils.notNullStr(price);
     }
 
+    public String getItemDistributionMode() {
+        return StringUtils.notNullStr(mItemDistributionMode);
+    }
+
+    public void setItemDistributionMode(String itemDistributionMode) {
+        this.mItemDistributionMode = StringUtils.notNullStr(itemDistributionMode);
+    }
+
     public String getFeaturedImage() {
         return StringUtils.notNullStr(mFeaturedImage);
     }
@@ -188,6 +198,7 @@ public class NemurOrder {
                 && order.orderId == this.orderId
                 && order.getTitle().equals(this.getTitle())
                 && order.getPrice().equals(this.getPrice())
+                && order.getItemDistributionMode().equals(this.getItemDistributionMode())
                 && order.getFeaturedImage().equals(this.getFeaturedImage())
                 && order.getFeaturedVideo().equals(this.getFeaturedVideo());
     }

@@ -36,14 +36,15 @@ public class NemurOrderTable {
             + "account_id," // 5
             + "title," // 6
             + "price," // 7
-            + "buyer_name," // 8
-            + "featured_image," // 9
-            + "featured_video," // 10
-            + "date_published," // 11
-            + "tag_name," // 12
-            + "tag_type," // 13
-            + "has_gap_marker," // 14
-            + "card_type"; // 15
+            + "item_distribution_mode," // 8
+            + "buyer_name," // 9
+            + "featured_image," // 10
+            + "featured_video," // 11
+            + "date_published," // 12
+            + "tag_name," // 13
+            + "tag_type," // 14
+            + "has_gap_marker," // 15
+            + "card_type"; // 16
 
     protected static void createTables(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE tbl_orders ("
@@ -54,6 +55,7 @@ public class NemurOrderTable {
                 + " account_id INTEGER DEFAULT 0,"
                 + " title  TEXT,"
                 + " price TEXT,"
+                + " item_distribution_mode TEXT,"
                 + " buyer_name TEXT,"
                 + " featured_image TEXT,"
                 + " featured_video TEXT,"
@@ -134,6 +136,7 @@ public class NemurOrderTable {
         ContentValues values = new ContentValues();
         values.put("title", order.getTitle());
         values.put("price", order.getPrice());
+        values.put("item_distribution_mode", order.getItemDistributionMode());
         values.put("featured_image", order.getFeaturedImage());
         values.put("featured_video", order.getFeaturedVideo());
         NemurDatabase.getWritableDb().update(
@@ -342,7 +345,7 @@ public class NemurOrderTable {
         SQLiteStatement stmtOrders = db.compileStatement(
                 "INSERT OR REPLACE INTO tbl_orders ("
                         + COLUMN_NAMES
-                        + ") VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,?12,?13,?14,?15)");
+                        + ") VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,?12,?13,?14,?15,?16)");
 
         db.beginTransaction();
         try {
@@ -362,14 +365,15 @@ public class NemurOrderTable {
                 stmtOrders.bindLong(5, order.accountId);
                 stmtOrders.bindString(6, order.getTitle());
                 stmtOrders.bindString(7, order.getPrice());
-                stmtOrders.bindString(8, order.getBuyerName());
-                stmtOrders.bindString(9, order.getFeaturedImage());
-                stmtOrders.bindString(10, order.getFeaturedVideo());
-                stmtOrders.bindString(11, order.getDatePublished());
-                stmtOrders.bindString(12, tagName);
-                stmtOrders.bindLong(13, tagType);
-                stmtOrders.bindLong(14, SqlUtils.boolToSql(hasGapMarker));
-                stmtOrders.bindString(15, NemurCardType.toString(order.getCardType()));
+                stmtOrders.bindString(8, order.getItemDistributionMode());
+                stmtOrders.bindString(9, order.getBuyerName());
+                stmtOrders.bindString(10, order.getFeaturedImage());
+                stmtOrders.bindString(11, order.getFeaturedVideo());
+                stmtOrders.bindString(12, order.getDatePublished());
+                stmtOrders.bindString(13, tagName);
+                stmtOrders.bindLong(14, tagType);
+                stmtOrders.bindLong(15, SqlUtils.boolToSql(hasGapMarker));
+                stmtOrders.bindString(16, NemurCardType.toString(order.getCardType()));
                 stmtOrders.execute();
             }
 
@@ -452,6 +456,7 @@ public class NemurOrderTable {
         order.setAccountName(c.getString(c.getColumnIndex("account_name")));
         order.setBuyerName(c.getString(c.getColumnIndex("buyer_name")));
         order.setPrice(c.getString(c.getColumnIndex("price")));
+        order.setItemDistributionMode(c.getString(c.getColumnIndex("item_distribution_mode")));
         order.setFeaturedImage(c.getString(c.getColumnIndex("featured_image")));
         order.setFeaturedVideo(c.getString(c.getColumnIndex("featured_video")));
 

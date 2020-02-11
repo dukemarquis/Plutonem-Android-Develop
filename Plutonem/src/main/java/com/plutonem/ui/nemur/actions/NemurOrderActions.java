@@ -74,6 +74,7 @@ public class NemurOrderActions {
                     // the nem/buyers/$buyerId/orders/$orderId endpoint which is missing some information
                     localOrder.setTitle(serverOrder.getTitle());
                     localOrder.setPrice(serverOrder.getPrice());
+                    localOrder.setItemDistributionMode(serverOrder.getItemDistributionMode());
                     localOrder.setFeaturedImage(serverOrder.getFeaturedImage());
                     localOrder.setFeaturedVideo(serverOrder.getFeaturedVideo());
                     NemurOrderTable.updateOrder(localOrder);

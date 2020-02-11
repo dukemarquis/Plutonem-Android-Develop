@@ -282,10 +282,34 @@ class NemurOrderDetailFragment : Fragment(),
                         "official flagship store of plutonem",
                         order.title,
                         order.price,
-                        "express delivery ￥0.00"
+                        order.itemDistributionMode
 
                 )
             }
+
+//            if (order.price.indexOf("$") == -1) {
+//                viewBuy.setOnClickListener {
+//                    NemurActivityLauncher.showEditOrderView(
+//                            activity,
+//                            "official flagship store of plutonem",
+//                            order.title,
+//                            order.price,
+//                            "express delivery ￥0.00"
+//
+//                    )
+//                }
+//            } else {
+//                viewBuy.setOnClickListener {
+//                    NemurActivityLauncher.showEditOrderView(
+//                            activity,
+//                            "official flagship store of plutonem",
+//                            order.title,
+//                            order.price,
+//                            "express delivery $0.00"
+//
+//                    )
+//                }
+//            }
         } else {
             viewBuy.visibility = View.INVISIBLE
             viewBuy.setOnClickListener(null)

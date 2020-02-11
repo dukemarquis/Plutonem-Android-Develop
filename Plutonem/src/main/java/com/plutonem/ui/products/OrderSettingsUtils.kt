@@ -19,16 +19,16 @@ class OrderSettingsUtils
         val itemSalesPrice = orderModel.itemSalesPrice
         val orderNumber = orderModel.number
         val itemDistributionMode = orderModel.itemDistributionMode
-        if (!TextUtils.isEmpty(itemSalesPrice)
-            && orderNumber.toInt() != 0
-            && !TextUtils.isEmpty(itemDistributionMode)) {
+        labelToUse = if (!TextUtils.isEmpty(itemSalesPrice)
+                && orderNumber.toInt() != 0
+                && !TextUtils.isEmpty(itemDistributionMode)) {
             val formattedPrice = formattedForTotalPriceLabel(itemSalesPrice, orderNumber, itemDistributionMode)
-            labelToUse = resourceProvider.getString(R.string.total_on, formattedPrice)
+            resourceProvider.getString(R.string.total_on, formattedPrice)
         } else if (OrderUtils.shouldConfirmImmediatelyOptionBeAvailable(orderModel.status)) {
-            labelToUse = resourceProvider.getString(R.string.hundred)
+            resourceProvider.getString(R.string.hundred)
         } else {
             // TODO: What should the label be if there is no specific value and this is not a PAYING?
-            labelToUse = ""
+            ""
         }
         return labelToUse
     }
@@ -39,7 +39,7 @@ class OrderSettingsUtils
         itemDistributionMode: String
     ): String {
         val itemSalesPriceTemporal = itemSalesPrice.substring(1)
-        val totalPriceTemporalInt: Int
+//        val totalPriceTemporalInt: Int
         val totalPriceTemporalDouble: Double
         val totalPriceTemporalString: String
 //        decimalFormat.roundingMode = RoundingMode.CEILING
@@ -50,14 +50,14 @@ class OrderSettingsUtils
             itemDistributionModeTemporal = itemDistributionMode.substring(itemDistributionMode.indexOf("$") + 1)
 //            totalPriceTemporal = String.format("%.2f",itemSalesPriceTemporal.toInt() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt().toDouble()).toDouble()
 //            totalPriceTemporal = decimalFormat.format(totalPriceTemporal)
-            totalPriceTemporalInt = itemSalesPriceTemporal.toInt() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt()
-            totalPriceTemporalDouble = totalPriceTemporalInt.toDouble()
+            totalPriceTemporalDouble = itemSalesPriceTemporal.toDouble() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt()
+//            totalPriceTemporalDouble = totalPriceTemporalInt.toDouble()
             totalPriceTemporalString = DecimalFormat("#,##0.00").format(totalPriceTemporalDouble)
             totalPrice = "$$totalPriceTemporalString"
         } else {
             itemDistributionModeTemporal = itemDistributionMode.substring(itemDistributionMode.indexOf("￥") + 1)
-            totalPriceTemporalInt = itemSalesPriceTemporal.toInt() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt()
-            totalPriceTemporalDouble = totalPriceTemporalInt.toDouble()
+            totalPriceTemporalDouble = itemSalesPriceTemporal.toDouble() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble()
+//            totalPriceTemporalDouble = totalPriceTemporalInt.toDouble()
             totalPriceTemporalString = DecimalFormat("#,##0.00").format(totalPriceTemporalDouble)
             totalPrice = "￥$totalPriceTemporalString"
         }

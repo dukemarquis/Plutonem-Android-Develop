@@ -80,7 +80,7 @@ public class NemurDatabase extends SQLiteOpenHelper {
         }
 
         switch (currentVersion) {
-            case 136:
+            case 1:
                 // no-op
                 currentVersion++;
         }
