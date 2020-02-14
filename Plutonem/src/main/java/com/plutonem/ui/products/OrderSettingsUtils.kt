@@ -50,7 +50,7 @@ class OrderSettingsUtils
             itemDistributionModeTemporal = itemDistributionMode.substring(itemDistributionMode.indexOf("$") + 1)
 //            totalPriceTemporal = String.format("%.2f",itemSalesPriceTemporal.toInt() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt().toDouble()).toDouble()
 //            totalPriceTemporal = decimalFormat.format(totalPriceTemporal)
-            totalPriceTemporalDouble = itemSalesPriceTemporal.toDouble() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble().toInt()
+            totalPriceTemporalDouble = itemSalesPriceTemporal.toDouble() * orderNumber.toInt() + itemDistributionModeTemporal.toDouble()
 //            totalPriceTemporalDouble = totalPriceTemporalInt.toDouble()
             totalPriceTemporalString = DecimalFormat("#,##0.00").format(totalPriceTemporalDouble)
             totalPrice = "$$totalPriceTemporalString"
