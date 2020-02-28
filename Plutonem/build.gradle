@@ -23,7 +23,7 @@ apply plugin: "androidx.navigation.safeargs.kotlin"
 android {
     signingConfigs {
         Plutonem_SigningConfig {
-            storeFile file('D:\\android-studio-project\\plutonem\\Plutonem-Android-master\\upload-keystore.jks')
+            storeFile file('/Users/hancao/Desktop/findex2/Plutonem-Android-Develop/upload-keystore.jks')
             storePassword 'Cao18913912779!'
             keyAlias = 'upload'
             keyPassword 'Cao18913912779'
@@ -38,9 +38,9 @@ android {
 
     compileSdkVersion 29
 
-    dataBinding {
-        enabled = true
-    }
+//    dataBinding {
+//        enabled = true
+//    }
 
     defaultConfig {
         applicationId "com.plutonem"

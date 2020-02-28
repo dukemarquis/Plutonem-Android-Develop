@@ -53,16 +53,11 @@ public class PMainActivity extends AppCompatActivity implements
 
     private BuyerModel mSelectedBuyer;
 
-    @Inject
-    AccountStore mAccountStore;
-    @Inject
-    BuyerStore mBuyerStore;
-    @Inject
-    Dispatcher mDispatcher;
-    @Inject
-    NewsManager mNewsManager;
-    @Inject
-    SubmitUtilsWrapper mSubmitUtilsWrapper;
+    @Inject AccountStore mAccountStore;
+    @Inject BuyerStore mBuyerStore;
+    @Inject Dispatcher mDispatcher;
+    @Inject NewsManager mNewsManager;
+    @Inject SubmitUtilsWrapper mSubmitUtilsWrapper;
 
     /*
      * fragments implement this if their contents can be scrolled, called when user

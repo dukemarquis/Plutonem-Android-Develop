@@ -62,22 +62,15 @@ public class Plutonem extends MultiDexApplication implements HasServiceInjector,
     private static Context mContext;
     private static BitmapLruCache mBitmapCache;
 
-    @Inject
-    DispatchingAndroidInjector<Service> mServiceDispatchingAndroidInjector;
-    @Inject
-    DispatchingAndroidInjector<Fragment> mSupportFragmentInjector;
+    @Inject DispatchingAndroidInjector<Service> mServiceDispatchingAndroidInjector;
+    @Inject DispatchingAndroidInjector<Fragment> mSupportFragmentInjector;
 
-    @Inject
-    Dispatcher mDispatcher;
-    @Inject
-    AccountStore mAccountStore;
+    @Inject Dispatcher mDispatcher;
+    @Inject AccountStore mAccountStore;
 
-    @Inject
-    @Named("custom-ssl")
-    RequestQueue mRequestQueue;
+    @Inject @Named("custom-ssl") RequestQueue mRequestQueue;
     public static RequestQueue sRequestQueue;
-    @Inject
-    OAuthAuthenticator mOAuthAuthenticator;
+    @Inject OAuthAuthenticator mOAuthAuthenticator;
     public static OAuthAuthenticator sOAuthAuthenticator;
 
     protected AppComponent mAppComponent;
