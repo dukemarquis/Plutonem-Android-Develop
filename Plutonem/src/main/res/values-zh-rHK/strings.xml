@@ -87,7 +87,7 @@ Language: zh_TW
     <string name="order_list_delivering">待發貨</string>
     <string name="order_list_receiving">待收貨</string>
     <string name="order_list_finished">待評價</string>
-    <string name="await_delivery">等待配送中</string>
+    <string name="await_delivery">待發貨</string>
     <string name="news_card_announcement_title_sample_announcement">[新功能已可使用]</string>
     <string name="news_card_announcement_content_sample_announcement">[現在沒時間購買嗎？沒問題：等有空時再來。]</string>
     <string name="news_card_announcement_action_sample_announcement">[購買更多]</string>
