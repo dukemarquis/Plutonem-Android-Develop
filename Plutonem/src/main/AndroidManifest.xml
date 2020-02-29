@@ -70,19 +70,19 @@
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Detail activity -->
-        <activity
-            android:name=".Plutonem_cdetail"
-            android:label="" />
+<!--        &lt;!&ndash; Detail activity &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".Plutonem_cdetail"-->
+<!--            android:label="" />-->
 
-        <!-- Order activity -->
-        <activity
-            android:name=".PlutonemCorderActivity"
-            android:label="" />
+<!--        &lt;!&ndash; Order activity &ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".PlutonemCorderActivity"-->
+<!--            android:label="" />-->
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/searchable" />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.actions"-->
+<!--            android:resource="@xml/searchable" />-->
 
         <!-- Products activities -->
         <activity

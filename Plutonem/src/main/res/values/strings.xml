@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Plutonem</string>
+    <string name="app_name" translatable="false">Plutonem</string>
 
     <!-- account setup -->
     <string name="no_network_title">No network available</string>
@@ -12,7 +12,7 @@
     <string name="item_distribution_mode">Item Distribution Mode</string>
 
     <!-- Screen titles -->
-    <string name="home_page_section_screen_title">Nemur</string>
+    <string name="home_page_section_screen_title" translatable="false">Nemur</string>
     <string name="me_section_screen_title">Me</string>
 
     <!--TabBar Accessibility Labels-->
@@ -154,6 +154,39 @@
     <string name="previous_button" translatable="false">&lt;</string>
     <string name="next_button" translatable="false">&gt;</string>
 
+    <!-- Login -->
+    <!-- If any of these appear unused, be sure to check the same string in the login library -
+    it may be used there and keeping it here is required for translation. -->
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="enter_phone_plutonem">Log in to Plutonem using a phone number to enjoy shopping process.</string>
+    <string name="next">Next</string>
+    <string name="alternatively">Alternatively:</string>
+    <string name="sign_up_instead">Sign up</string>
+    <string name="phone_not_registered_plutonem">Hmm, we can\'t find a Plutonem account connected to this phone number. Please sign up with this number first.</string>
+    <string name="registration_fail">It looks like this registration is fail. Please try again later.</string>
+    <string name="enter_pn_password">Enter your Plutonem password.</string>
+    <string name="enter_pn_password_google">To proceed with this Google account, please provide the matching Plutonem password. This will be asked only once.</string>
+    <string name="enter_phone">Enter the Phone of the Plutonem you\'d like to connect.</string>
+    <string name="login_error_button">Close</string>
+    <string name="signup_phone_error_generic">There was some trouble checking the phone number.</string>
+    <string name="signup_phone_header">To create your new Plutonem account, please enter your phone number.</string>
+
+    <string name="duplicate_buyer_detected">A duplicate buyer has been detected.</string>
+    <string name="error_fetch_my_profile">Couldn\'t retrieve your profile</string>
+    <string name="checking_phone">Checking phone</string>
+    <string name="phone_invalid">Enter a valid phone number</string>
+    <string name="Signing_up">Signing up</string>
+    <string name="logging_in">Logging in</string>
+    <string name="error_generic">An error occurred</string>
+    <string name="error_generic_network">A network error occurred. Please check your connection and try again.</string>
+
+    <!-- Screen titles -->
+    <string name="phone_number_login_title">Phone number login</string>
+    <string name="pn_signup_title">Signup credentials</string>
+
+    <string name="signup_phone_screen_title">Phone signup</string>
+
     <!-- Orders -->
     <string name="order_list_account_me">Me</string>
     <string name="order_list_delivering">Delivering</string>
@@ -179,23 +212,5 @@
     <!--suppress UnusedResources -->
     <string name="news_card_announcement_action_url_sample_announcement" translatable="false">https://www.plutonem.com/</string>
     <!-- END (News Card) -->
-
-    <string name="quantity">quantity</string>
-
-    <string name="app_label">findex2</string>
-    <string name="hint_text">silk dress with blueberry type</string>
-
-    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales dui orci, ut egestas nibh porta sit amet. In vestibulum vestibulum ipsum a lacinia. Nunc bibendum lectus magna, ac vestibulum tellus tristique id. Ut lobortis ipsum quis nisl ornare, eu blandit ante molestie. Aenean malesuada orci enim, vitae viverra ex volutpat id. Praesent vitae libero non lorem vestibulum elementum id et tortor. Sed finibus erat non est feugiat fermentum. Vivamus nec pretium nisl, et elementum nisi. Pellentesque pretium sagittis arcu, sed ornare est semper ut. Nulla eu quam mauris. Fusce risus sem, egestas a odio ut, volutpat blandit est. Pellentesque gravida lectus nisi, eget consectetur dolor feugiat sit amet. Donec consectetur dictum sapien, molestie tincidunt neque iaculis in. Mauris et nisl dui. Proin malesuada dapibus purus, feugiat interdum neque volutpat sed. Suspendisse ut interdum elit, a ultricies nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta consequat nisl, vitae suscipit sem vehicula at. Donec pretium tempor dui, vitae gravida diam lacinia sed. Quisque auctor venenatis erat sit amet egestas. Vivamus neque risus, facilisis vitae justo et, blandit vehicula augue. Fusce fringilla maximus ante non cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur dignissim risus ut dolor laoreet, eget cursus metus vehicula. Cras odio tortor, viverra vel neque ut, tristique sodales nisl. In eget tortor lectus. Nullam feugiat nisl in sapien finibus dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
-
-    <string name="tab_homePage">whole</string>
-    <string name="tab_clothesAndShoes">C &amp; S</string>
-    <string name="tab_makeupAndDecor">M &amp; D</string>
-
-    <string name="card_demo">card_demo</string>
-
-    <string name="content_description">content_description</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
